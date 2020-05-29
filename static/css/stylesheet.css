@@ -1,0 +1,13 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: #000000; }
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem; } }
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block; }
+
+/*# sourceMappingURL=stylesheet.css.map */

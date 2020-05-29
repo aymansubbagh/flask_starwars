@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="ayman subbagh" />
+        <title>Star Wars</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../static/assets/img/Star_wars_1977_us.svg.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/css/styles.css" rel="stylesheet" />
+
+        <style media="screen">
+        header.masthead {
+          padding-top: 10rem;
+          padding-bottom: calc(10rem - 4.5rem);
+          background: url("../static/assets/img/portfolio/fullsize/496873.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        @media (min-width: 992px) {
+          header.masthead {
+            height: 60vh;
+            min-height: 20rem;
+            padding-top: 4.5rem;
+            padding-bottom: 0;
+          }
+        }
+
+
+
+
+        </style>
+
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand js-scroll-trigger" href="{{ url_for('index') }}">Start Wars</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#episodes">Episodes</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#trailer">Trailer</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+        </header>
+        <!-- About-->
+        <section class="page-section bg-light" id="about">
+            <div class="container">
+              <div class="row shadow-lg p-4 bg-white">
+                <div class="bg-white">
+                  <!--embed whatever tags you want-->
+                    {% block story_plot %}
+                    {% endblock %}
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!--Episodes-->
+        <section class="page-section" id="episodes">
+            <div class="container-fluid">
+                <h2 class="text-center mt-0">Skywalker saga</h2>
+                <hr/>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 text-center">
+                        <div class="mt-5">
+                          <a href="{{ url_for('a_new_hope') }}">
+                            <img src="../static/assets/img/portfolio/fullsize/Star_wars_1977_us.svg.png" width="250" height="150">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 text-center">
+                        <div class="mt-5">
+                          <a href="{{ url_for('the_empire_strikes_back') }}">
+                            <img src="../static/assets/img/portfolio/fullsize/1280px-Theempirestrikesback-logo.svg.png" width="250" height="150">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 text-center">
+                        <div class="mt-5">
+                          <a href="{{ url_for('return_of_the_jedi') }}">
+                            <img src="../static/assets/img/portfolio/fullsize/1920px-Returnofthejedi-logo.svg.png" width="250" height="150">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 text-center">
+                        <div class="mt-5">
+                          <a href="{{ url_for('the_phantom_menace') }}">
+                            <img src="../static/assets/img/portfolio/fullsize/Sw-ep1-logo.png" width="250" height="150">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 text-center">
+                      <div class="mt-5">
+                        <a href="{{ url_for('attack_of_the_clones') }}">
+                          <img src="../static/assets/img/portfolio/fullsize/Sw-ep2-logo.png" width="250" height="150">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 text-center">
+                      <div class="mt-5">
+                        <a href="{{ url_for('revenge_of_the_sith') }}">
+                          <img src="../static/assets/img/portfolio/fullsize/Sw-ep3-logo.png" width="250" height="150">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 text-center">
+                      <div class="mt-5">
+                        <a href="{{ url_for('the_force_awakens') }}">
+                          <img src="../static/assets/img/portfolio/fullsize/Star_Wars_-_The_Force_Awakens_logo.png" width="250" height="150">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 text-center">
+                      <div class="mt-5">
+                        <a href="{{ url_for('the_last_jedi') }}">
+                          <img src="../static/assets/img/portfolio/fullsize/Star_Wars_-_The_Last_Jedi_logo.png" width="250" height="150">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 text-center">
+                      <div class="mt-5">
+                        <a href="{{ url_for('the_rise_of_skywalker') }}">
+                          <img src="../static/assets/img/portfolio/fullsize/Star_Wars_-_The_Rise_of_Skywalker_logo.png" width="250" height="150">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action-->
+        <section class="page-section mb-5 bg-dark text-white text-center" id="trailer">
+          <div class="container-fluid">
+              {% block trailer %}
+              {% endblock %}
+          </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section mb-5" id="contact">
+          <div class="container-fluid mt-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <p><h1 class="mt-0">looking for a Software Engineer ?</h1></p>
+                <p><h2 class="mt-0">look no further</h2></p>
+                <p><h3 class="mt-0">Click the image to view my resume</h3></p>
+              </div>
+            </div>
+
+              <div class="text-center">
+                <a class="navbar-brand js-scroll-trigger" href="{{ url_for('cv') }}">
+
+                  <img class="rounded-circle" src="../static/assets/img/portfolio/fullsize/profile.jpeg" width="40%" height="40%">
+
+                </a>
+              </div>
+          </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container-fluid"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../static/js/scripts.js"></script>
+    </body>
+</html>

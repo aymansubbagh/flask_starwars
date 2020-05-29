@@ -1,0 +1,48 @@
+$font_family: sans-serif;
+$line-height: 1.15;
+$webkit_text_size: 100%;
+
+
+html {
+  font-family: $font_family;
+  line-height: $line-height;
+  -webkit-text-size-adjust: $webkit_text_size;
+  -webkit-tap-highlight-color: #000000;
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
+article {
+  display: block;
+}
+aside{
+  @extend article;
+}
+figcaption{
+  @extend article;
+}
+figure{
+  @extend article;
+}
+footer{
+  @extend article;
+}
+header{
+  @extend article;
+}
+hgroup{
+  @extend article;
+}
+main{
+  @extend article;
+}
+nav{
+  @extend article;
+}
+section{
+  @extend article;
+}
